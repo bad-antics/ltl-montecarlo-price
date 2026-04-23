@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_montecarlo_price
+
+import std::io
+use ltl_montecarlo_price as lib
+
+fn main() {
+    io::println("ltl_montecarlo_price demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
